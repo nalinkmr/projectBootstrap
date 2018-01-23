@@ -138,7 +138,7 @@
         <hr>
         <div class="row">
           <div class="col-lg-4">
-            <div class="panel panel-default animated zoomIn" id="read">
+            <div class="panel panel-default read">
               <div class="panel-body" >
                 <h4>Read Comics <span class="glyphicon glyphicon-book"></span></h4>
                 <p>The Comic Reader (TCR) was a comics news-fanzine published from 1961 to 1984. Debuting in the pre-direct market era TCR was the first regularly published comics industry news fanzine, and was able to secure many contacts from within the ranks of the larger publishers. </p>
@@ -146,7 +146,7 @@
             </div>
           </div> 
           <div class="col-lg-4">
-            <div class="panel panel-default">
+            <div class="panel panel-default upload">
               <div class="panel-body">
                 <h4>Upload comics <span class="glyphicon glyphicon-upload"></span></h4>
                 <p>Webcomics (also known as online comics or Internet comics) are comics published on a website. While many are published exclusively on the web, others are also published in magazines, newspapers or in books. others are also published in magazines, newspapers or in books.</p>
@@ -154,7 +154,7 @@
             </div>
           </div> 
           <div class="col-lg-4">
-            <div class="panel panel-default">
+            <div class="panel panel-default Youtube">
               <div class="panel-body">
                 <h4>Youtube videos <span class="glyphicon glyphicon-facetime-video"></span></h4>
                 <p>YouTube is a free video sharing website that lets people upload, view, and share videos. Videos can be rated with a like or dislike, most videos can be commented on if logged in to an account. most videos can be commented on if logged in to an account.</p>
@@ -236,23 +236,5 @@
 	});
 });
     </script>
-    <script>  
-      $(document).ready(function()
-      {
-        $(window).scroll(function()
-        {
-          var y=$(this).scrollTop();
-          if(y>=500)
-          {
-            $('#read').addClass('animated zoomIn');
-          }
-          if(y<500)
-          {
-            $('#read').removeClass('animated zoomIn');
-          }
-        });
-      });      
-    </script> 
-
   </body>
 </html>

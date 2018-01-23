@@ -126,12 +126,13 @@
             <p class="text-justify hidden-sm hidden-xs">Find inspiration in the new photos we hand-select every day or use our search to find and download exactly what you’re looking for.Download free HD wallpapers, backgrounds and lock screens to personalize your cell phone or mobile device using the Zedge app for Android and iPhone. </span>
             </p>
           </div>
-          <div class="col-lg-3 col-sm-3 col-md-3 hidden-xs" data-offset="10">  <!-- for the image 4 blocks -->
-              <!-- <img src="images/arrow1.jpg" id="arrow" class="img-responsive"   alt="comic-wallies" > -->
-          </div>
           
-          <div class="col-lg-4 col-sm-5 col-md-4 col-xs-12"> 
-            <img src="images/colarge.jpg" class="img-responsive" id="colarge" alt="comic-wallies" >
+          <div class="col-lg-3 col-sm-3 col-md-3" data-offset="10">  <!-- for the image 4 blocks -->
+               <img src="images/arrow.jpg" class="img-rounded" alt="Cinque Terre" width="236" height="304" id="arrow" alt="comic-wallies" > 
+          </div> 
+
+          <div class="col-lg-3 col-sm-3 col-md-3 "> 
+            <img src="images/colarge.jpg" class="img-rounded" alt="Cinque Terre" width="236" height="304" id="colarge" alt="comic-wallies" >
           </div>  <!-- for the image 4 blocks -->
         </div>
         <!-- end of first row -->
@@ -139,24 +140,24 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="panel panel-default read">
-              <div class="panel-body" >
-                <h4>Read Comics <span class="glyphicon glyphicon-book"></span></h4>
+              <div class="panel-body" style="background-color:#97bf0d;">
+                <h3>Read Comics <span class="glyphicon glyphicon-book"></span></h3>
                 <p>The Comic Reader (TCR) was a comics news-fanzine published from 1961 to 1984. Debuting in the pre-direct market era TCR was the first regularly published comics industry news fanzine, and was able to secure many contacts from within the ranks of the larger publishers. </p>
               </div>
             </div>
           </div> 
           <div class="col-lg-4">
             <div class="panel panel-default upload">
-              <div class="panel-body">
-                <h4>Upload comics <span class="glyphicon glyphicon-upload"></span></h4>
+              <div class="panel-body" style="background-color:#EC3047;">
+                <h3>Upload comics <span class="glyphicon glyphicon-upload"></span></h3>
                 <p>Webcomics (also known as online comics or Internet comics) are comics published on a website. While many are published exclusively on the web, others are also published in magazines, newspapers or in books. others are also published in magazines, newspapers or in books.</p>
               </div>
             </div>
           </div> 
           <div class="col-lg-4">
             <div class="panel panel-default Youtube">
-              <div class="panel-body">
-                <h4>Youtube videos <span class="glyphicon glyphicon-facetime-video"></span></h4>
+              <div class="panel-body" style="background-color:#97bf0d;">
+                <h3>Youtube videos <span class="glyphicon glyphicon-facetime-video"></span></h3>
                 <p>YouTube is a free video sharing website that lets people upload, view, and share videos. Videos can be rated with a like or dislike, most videos can be commented on if logged in to an account. most videos can be commented on if logged in to an account.</p>
               </div>
             </div>
@@ -236,5 +237,30 @@
 	});
 });
     </script>
+     <script>  
+      $(document).ready(function()
+      {
+        $(window).scroll(function()
+        {
+          var y=$(this).scrollTop();
+          if(y>=100)
+          {
+            $('#arrow').addClass('animated fadeInDownBig');
+          }
+          if(y<100)
+          {
+            $('#arrow').removeClass('animated fadeInDownBig');
+          }
+          if(y>=100)
+          {
+            $('#colarge').addClass('animated fadeInDownBig');
+          }
+          if(y<100)
+          {
+            $('#colarge').removeClass('animated fadeInDownBig');
+          }
+        });
+      });      
+    </script> 
   </body>
 </html>
